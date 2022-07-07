@@ -13,6 +13,9 @@ function rot13(encodedStr){
   let decodedArr = []; // Your Result goes here
   // Only change code below this line
   // your code here
+  for(let i=0; i<codeArr.length; i++){
+      decodedArr[i] = (codeArr.charCodeAt(i)-13) % 26 + 65;
+  }
   // Only change code above this line
   return decodedArr.join(""); // Array to String
 }
